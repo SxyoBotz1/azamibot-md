@@ -1066,7 +1066,7 @@ export async function participantsUpdate({ id, participants, action }) {
 							try {
 								bufpp = await this.profilePictureUrl(user, 'image')
 							} catch {
-								bufpp = 'https://i.ibb.co/m53WF9N/avatar-contact.png'
+								bufpp = ''
 							}
 							bufppgc = await this.profilePictureUrl(id, 'image')
 							uname = await this.getName(user)
